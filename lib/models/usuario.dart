@@ -3,5 +3,6 @@ class Usuario {
   int edad;
   List<String>? profesiones;
 
-  Usuario({required this.nombre, required this.edad, this.profesiones});
+  Usuario({required this.nombre, required this.edad, this.profesiones})
+      :assert(nombre != null);
 }
